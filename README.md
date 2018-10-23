@@ -9,6 +9,6 @@ models/deploy-ssd-face-384-8.prototxt是模型的测试网络
 
 python/wider.py是处理widerface数据程序，在终端输入python wider.py --FileDir=your path for input --OutDir=your_out_path运，程序处理FileDir/wider_face_all_bbx_gt.txt并会在OutDir/下生成wider_all_data.txt,里面对应保存的是widerface图像和边框标注文件的路径，此外还对应生成wider_all_box存放对应每一张图片的人脸groundtrue坐标。
 
-face_data在百度云盘：
+face_data在百度云盘,链接: https://pan.baidu.com/s/1C7CYy8zldH3OSSJj_W4rMw 提取码: rjmj
 
 python/create_wider_lmdb.sh和create_wider_lmdb.sh是调用caffe_ssd工具生成lmdb脚本，./create_*_lmdb.sh运行脚本，会在相应目录下生成训练所需的widerface以及fddb人脸数据的lmdb
